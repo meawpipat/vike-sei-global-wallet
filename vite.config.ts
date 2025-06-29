@@ -37,4 +37,10 @@ export default defineConfig({
   build: {
     target: "es2022",
   },
+  ssr: {
+    noExternal: ['@sei-js/sei-global-wallet']
+  },
+  optimizeDeps: {
+    include: ['@sei-js/sei-global-wallet']
+  },
 });
