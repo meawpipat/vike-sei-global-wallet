@@ -1,0 +1,37 @@
+{
+  "scripts": {
+    "dev": "vike dev",
+    "build": "vike build",
+    "preview": "run-s build preview:wrangler",
+    "preview:wrangler": "wrangler pages dev",
+    "deploy:wrangler": "wrangler pages deploy",
+    "deploy": "run-s build deploy:wrangler"
+  },
+  "dependencies": {
+    "vike": "^0.4.235",
+    "@hono/node-server": "^1.14.4",
+    "@universal-middleware/hono": "^0.4.14",
+    "hono": "^4.8.2",
+    "@vitejs/plugin-react": "^4.6.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "vike-react": "^0.6.4",
+    "@universal-middleware/core": "^0.4.8",
+    "telefunc": "^0.2.7",
+    "vike-cloudflare": "^0.1.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "@hono/vite-dev-server": "^0.19.1",
+    "@types/node": "^20.19.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "tailwindcss": "^4.1.10",
+    "@tailwindcss/vite": "^4.1.10",
+    "@cloudflare/workers-types": "^4.20250620.0",
+    "wrangler": "^4.20.5",
+    "npm-run-all2": "^8.0.4"
+  },
+  "type": "module"
+}
