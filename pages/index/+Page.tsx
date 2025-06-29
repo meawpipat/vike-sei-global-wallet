@@ -1,4 +1,4 @@
-import ComponetA from "../../components/Link.js";
+import ComponetA from "../../components/ComponetA.js";
 
 export default function Page() {
   return ((false) && <ComponetA />);

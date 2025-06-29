@@ -5,7 +5,7 @@ import "./tailwind.css";
 import { createThirdwebClient } from 'thirdweb';
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ConnectButton, ThirdwebProvider } from 'thirdweb/react';
-import ComponetA from '../components/Link';
+import ComponetA from '../components/ComponetA';
 
 export const client = createThirdwebClient({
   clientId: "CLIENT_ID",
